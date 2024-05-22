@@ -1,0 +1,18 @@
+!Comentários- Desativar comandos;
+enable
+   ! Configurando Data e Hora
+    clock set 15:15:00  22 May 2024
+
+    !MODO DE CONFIGURAÇÃO GLOBAL 
+      configure terminal
+
+   !configuração do hostname
+        hosname sw-01
+ 
+  service password-encryption
+
+  service timestamps log datetime msec
+ no ip domain-lookup
+bane
+   ! Salvando da RAM para NVRAM
+     copy runnig-config startup-config
