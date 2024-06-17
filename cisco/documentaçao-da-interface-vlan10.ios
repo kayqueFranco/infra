@@ -1,0 +1,10 @@
+enable
+    configure terminal
+        interface vlan 10
+        description Interface SVI switch  3650
+        ip address 192.168.10.252 255.255.255.0
+        no shutdown
+        end 
+    Write 
+    show ip interface brief
+    ping 192.168.10.252
