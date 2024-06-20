@@ -1,0 +1,14 @@
+!switch 2926 (acesso lado esquerdo)
+enable
+    configure terminal
+        interface range GigabitEthernet 0/1 - 2
+            switchport mode trunk 
+           switchport nonegotiate 
+           exit
+        interface range FastEthernet0  0/23 -24
+            switchport mode trunk
+            switchport nonegotiate
+            exit
+            end 
+write           
+

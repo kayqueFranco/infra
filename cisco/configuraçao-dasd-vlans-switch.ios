@@ -1,0 +1,7 @@
+!switch 2960 (acesso ao lado esquerdo)
+enable
+    cinfigure terminal
+        interface FastEthernet 0/1
+            description VLAN 40 ESTOQUE
+            switchport mode access 
+            switchport access 
